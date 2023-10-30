@@ -52,7 +52,7 @@ RUN set -eux; \
             --with-xpm \
             --with-freetype; \
     docker-php-ext-install gd; \
-    php -r 'var_dump(gd_info());' \
+    php -r 'var_dump(gd_info());'
 
 # Xdebug
 RUN mkdir -p docker/php/conf.d
